@@ -1,0 +1,17 @@
+.navigation-container {
+    ul {
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        background: #263238;
+        li {
+            list-style: none;
+            padding: 0 20px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
