@@ -1,0 +1,11 @@
+.masthead-link {
+    list-style: none;
+    width: calc(100% / 3);
+    &:not(:last-child) {
+        border-right: 2px solid white;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}

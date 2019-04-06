@@ -17,13 +17,6 @@ background-size: cover;
             padding: 0;
             width: 100%;
             max-width: 768px;
-            li {
-                list-style: none;
-                width: calc(100% / 3);
-                &:not(:last-child) {
-                    border-right: 2px solid white;
-                }
-            }
         }
     }
 }
