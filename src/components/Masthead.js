@@ -5,15 +5,15 @@ class Masthead extends Component {
     render() {
         const links = [
             {
-                link: 'https://github.com/uelski',
+                link: '#work-target',
                 label: 'Web Developer'
             },
             {
-                link: 'https://masoncos.bandcamp.com/',
-                label: 'Synthesizer Enthusiast'
+                link: '#music-target',
+                label: 'Musician'
             },
             {
-                link: 'https://www.facebook.com/sam.vredenburgh',
+                link: '#about-target',
                 label: 'Skier'
             }
         ];
