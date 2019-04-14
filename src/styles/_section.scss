@@ -1,0 +1,11 @@
+.page-section{
+    height: 1000px;
+
+    &.section--music{
+        background: black;
+    }
+
+    &.section--contact{
+        background: black;
+    }
+}

@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Masthead from './components/Masthead'
+import Navigation from './components/Navigation';
+import Work from './components/SectionWork';
+import Music from './components/SectionMusic';
+import Paintings from './components/SectionPaintings';
+import Contact from './components/SectionContact';
+import Footer from './components/SectionFooter';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.contactRef = React.createRef();
+    this.workRef = React.createRef();
+    this.musicRef = React.createRef();
+    this.paintingRef = React.createRef();
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Masthead />
+        <Navigation workRef={this.workRef} musicRef={this.musicRef} paintingRef={this.paintingRef}  contactRef={this.contactRef} />
+        <Work refPass={this.workRef} />
+        <Music refPass={this.musicRef} />
+        <Paintings refPass={this.paintingRef} />
+        <Contact refPass={this.contactRef} />
+        <Footer />
       </div>
     );
   }
