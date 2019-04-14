@@ -5,20 +5,20 @@ class Masthead extends Component {
     render() {
         const links = [
             {
-                link: 'https://github.com/uelski',
+                link: '#work-target',
                 label: 'Web Developer'
             },
             {
-                link: 'https://masoncos.bandcamp.com/',
-                label: 'Synthesizer Enthusiast'
+                link: '#music-target',
+                label: 'Musician'
             },
             {
-                link: 'https://www.facebook.com/sam.vredenburgh',
+                link: '#about-target',
                 label: 'Skier'
             }
         ];
         const linkList = links.map((l) => {
-            return <MastheadLink link={l.link} label={l.label} />
+            return <MastheadLink key={l.link} link={l.link} label={l.label} />
         })
         return (
             <div className="masthead-container">
