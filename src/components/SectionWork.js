@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Work extends Component {
     render() {
         return(
-            <div id="work-target" className="page-section section--work">
+            <div ref={this.props.refPass} className="page-section section--work">
 
             </div>
         )
