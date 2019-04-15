@@ -5,11 +5,11 @@ class Masthead extends Component {
     render() {
         const links = [
             {
-                link: '#work-target',
+                link: this.props.workRef,
                 label: 'Web Developer'
             },
             {
-                link: '#music-target',
+                link: this.props.musicRef,
                 label: 'Musician'
             },
             {

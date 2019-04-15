@@ -1,5 +1,10 @@
 .page-section{
     height: 1000px;
+    padding-top: 60px;
+
+    &.section--work {
+        display: flex;
+    }
 
     &.section--music{
         background: black;

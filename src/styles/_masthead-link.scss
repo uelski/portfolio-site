@@ -1,6 +1,7 @@
 .masthead-link {
     list-style: none;
     width: calc(100% / 3);
+    cursor: pointer;
     &:not(:last-child) {
         border-right: 2px solid white;
     }

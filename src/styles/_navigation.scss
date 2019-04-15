@@ -1,13 +1,17 @@
 .navigation-container {
+    background: #263238;
+    position: sticky;
+    top: 0;
     ul {
         margin: 0;
         padding: 20px 0;
         display: flex;
-        background: #263238;
+        width: 50%;
         li {
             list-style: none;
             padding: 0 20px;
             cursor: pointer;
+            width: 50%;
             a {
                 text-decoration: none;
                 color: white;
