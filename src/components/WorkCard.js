@@ -8,7 +8,7 @@ class WorkCard extends Component {
             <div className="work-card-container">
 
                 <div className="work-card-image-container">
-                    <img src="" alt=""/>
+                    <img src={this.props.imgSrc} alt={this.props.imgAlt} />
                 </div>
                 <div className="work-card-copy-container">
                     <h2>{this.props.headline}</h2>

@@ -1,5 +1,11 @@
 .work-card {
     &-container {
-        
+        padding: 2vw;
+    }
+    &-image-container {
+        width: 25vw;
+        img {
+            max-width: 100%;
+        }
     }
 }

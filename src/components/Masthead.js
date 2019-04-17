@@ -24,7 +24,7 @@ class Masthead extends Component {
             <div className="masthead-container">
                 <div className="masthead-content-container">
                     <h1>Sam Vredenburgh</h1>
-                    <ul>
+                    <ul className="flex">
                         {linkList}
                     </ul>
 

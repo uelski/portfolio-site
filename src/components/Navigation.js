@@ -43,7 +43,7 @@ class Navigation extends Component {
         })
         return (
             <div className='navigation-container'>
-                <ul>
+                <ul className="flex">
                     {navLinkList}
                 </ul>
             </div>
