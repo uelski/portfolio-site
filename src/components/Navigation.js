@@ -14,7 +14,7 @@ class Navigation extends Component {
     render() {
         const navLinks = [
             {
-                link: 'bio-target',
+                link: this.props.bioRef,
                 label: 'Bio'
             },
             {

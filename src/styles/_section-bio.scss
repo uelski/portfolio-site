@@ -1,0 +1,17 @@
+.section--bio {
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        width: 45%;
+    }
+
+    &__image-container {
+        img {
+            max-width: 100%;
+        }
+    }
+    &__copy-container {
+        
+    }
+}

@@ -13,7 +13,7 @@ class Masthead extends Component {
                 label: 'Musician'
             },
             {
-                link: '#about-target',
+                link: this.props.bioRef,
                 label: 'Skier'
             }
         ];
