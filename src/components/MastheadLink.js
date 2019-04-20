@@ -4,12 +4,10 @@ class MastheadLink extends Component {
     
     constructor(props){
         super(props)
-
-        // this.props.link = React.createRef();
     }
     scroll(r) {
-        console.log('click')
-        // r.current.scrollIntoView({behavior: 'smooth'});
+ 
+        r.current.scrollIntoView({behavior: 'smooth'});
     }
     render() {
         return(

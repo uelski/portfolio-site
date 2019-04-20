@@ -5,11 +5,11 @@ class Masthead extends Component {
     render() {
         const links = [
             {
-                link: '#work-target',
+                link: this.props.workRef,
                 label: 'Web Developer'
             },
             {
-                link: '#music-target',
+                link: this.props.musicRef,
                 label: 'Musician'
             },
             {
@@ -24,7 +24,7 @@ class Masthead extends Component {
             <div className="masthead-container">
                 <div className="masthead-content-container">
                     <h1>Sam Vredenburgh</h1>
-                    <ul>
+                    <ul className="flex">
                         {linkList}
                     </ul>
 

@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Masthead />
+        <Masthead workRef={this.workRef} musicRef={this.musicRef}  />
         <Navigation workRef={this.workRef} musicRef={this.musicRef} paintingRef={this.paintingRef}  contactRef={this.contactRef} />
         <Work refPass={this.workRef} />
         <Music refPass={this.musicRef} />
