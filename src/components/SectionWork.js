@@ -44,7 +44,7 @@ class Work extends Component {
                 imgAlt: 'Gladiator Card Image'
             },
             {
-                headline: 'Aisle Rocket Studios',
+                headline: 'ARS',
                 copy: 'again soemthing again once more maybe',
                 link: 'http://aislerocket.com/',
                 imgSrc: whirlpoolImage,
