@@ -12,7 +12,6 @@ class WorkCard extends Component {
                 </div>
                 <div className="work-card-copy-container">
                     <h2>{this.props.headline}</h2>
-                    <p>{this.props.copy}</p>
                     <a className='button--primary' href={this.props.link}>Check It Out</a>
                 </div>
 
