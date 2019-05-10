@@ -18,7 +18,7 @@ class Masthead extends Component {
             }
         ];
         const linkList = links.map((l) => {
-            return <MastheadLink key={l.link} link={l.link} label={l.label} />
+            return <MastheadLink key={l.label} link={l.link} label={l.label} />
         })
         return (
             <div className="masthead-container">

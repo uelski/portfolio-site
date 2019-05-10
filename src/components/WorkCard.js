@@ -11,8 +11,8 @@ class WorkCard extends Component {
                     <img src={this.props.imgSrc} alt={this.props.imgAlt} />
                 </div>
                 <div className="work-card-copy-container">
-                    <h2>{this.props.headline}</h2>
-                    <a className='button--primary' href={this.props.link}>Check It Out</a>
+                    <h3>{this.props.headline}</h3>
+                    <a className='button--primary' href={this.props.link}>Explore</a>
                 </div>
 
             </div>
