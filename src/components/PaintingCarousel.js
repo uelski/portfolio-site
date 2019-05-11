@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import Swiper from 'react-id-swiper';
+import { Pagination, Navigation } from 'swiper/dist/js/swiper.esm';
 import PaintingSlide from './PaintingSlide';
 import abstractOne from '../images/abstract_1_cropped-small.jpg';
 import abstractTwo from '../images/abstract_2_cropped-small.JPG';
@@ -41,13 +41,28 @@ class PaintingCarousel extends Component {
 
         const paintingRender = paintingList.map((painting) => {
             return (
-                <PaintingSlide key={painting.source} src={painting.source} alt={painting.alt} />
+                <div>
+                    <PaintingSlide key={painting.alt} src={painting.source} alt={painting.alt} />
+                </div>
             )
         })
+        const params = {
+            modules: [Navigation],
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+              },
+              renderPrevButton: () => <button className="swiper-button-prev"><i class="material-icons">
+              arrow_back_ios
+              </i></button>,
+              renderNextButton: () => <button className="swiper-button-next"><i class="material-icons">
+              arrow_forward_ios
+              </i></button>
+          }
         return (
-            <Carousel showThumbs={false}>
+            <Swiper {...params}>
                 {paintingRender}
-            </Carousel>
+            </Swiper>
         )
     }
 }

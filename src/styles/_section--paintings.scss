@@ -1,0 +1,40 @@
+.section--paintings {
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css');
+    background: #eeeeee;
+    .swiper-container {
+        width: 500px;
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+            background: none;
+            border: none;
+            transition: color .3s ease;
+            .material-icons {
+                font-size: 36px;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                color: #006064;
+            }
+        }
+
+    }
+    .swiper-slide {
+        width: 500px;
+    }
+    .painting-slide--container {
+        position: relative;
+        height: 500px;
+        width: 400px;
+        margin: 0 auto;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
