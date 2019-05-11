@@ -1,7 +1,19 @@
 .section--work {
-    background: #cfd8dc;
+    background: #eeeeee;
     .inner-container {
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+    .work-nav {
+        justify-content: center;
+        ul {
+            width: 80%;
+            justify-content: space-around;
+            li {
+                list-style: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
     }
 }

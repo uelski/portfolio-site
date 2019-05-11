@@ -36,7 +36,7 @@ class Navigation extends Component {
         ]
         const navLinkList = navLinks.map((link) => {
             return (
-                <li key={link.link}>
+                <li key={link.label}>
                     <a href onClick={() => {this.scroll(link.link)}}>{link.label}</a>
                 </li>
             )

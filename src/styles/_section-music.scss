@@ -1,0 +1,9 @@
+.section--music {
+    justify-content: center;
+    .music-container {
+        padding: 10px 0;
+        iframe {
+            border: none;
+        }
+    }
+}
