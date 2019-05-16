@@ -21,6 +21,7 @@ class ContactForm extends Component {
     }
     handleSubmit(event) {
         event.preventDefault();
+        console.log(this.state.formControls)
     }
 
     handleChange(event) {
@@ -41,7 +42,7 @@ class ContactForm extends Component {
     render() {
         return(
             <div className="contact-form-container">
-                <form onSubmit={this.handleSubmit}>
+                <form className="flex">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" 
                      value={this.state.formControls.name.value} 
@@ -51,9 +52,10 @@ class ContactForm extends Component {
                      value={this.state.formControls.email.value} 
                      onChange={this.handleChange}/>
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" value={this.state.formControls.message.value}
+                    <input type="text" name="message" value={this.state.formControls.message.value}
                      onChange={this.handleChange} />
                 </form>
+                <button onClick={this.handleSubmit} className="text-button">Submit</button>
             </div>
         )
     }
