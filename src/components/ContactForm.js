@@ -43,17 +43,17 @@ class ContactForm extends Component {
         return(
             <div className="contact-form-container">
                 <form className="flex">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" 
+                    <input className="contact-form-input" type="text" name="name" required autocomplete="off" 
                      value={this.state.formControls.name.value} 
                      onChange={this.handleChange} />
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" 
+                     <label htmlFor="name"><span>Name</span></label>
+                    <input className="contact-form-input" type="email" name="email" required autocomplete="off" 
                      value={this.state.formControls.email.value} 
                      onChange={this.handleChange}/>
-                    <label htmlFor="message">Message</label>
-                    <input type="text" name="message" value={this.state.formControls.message.value}
+                     <label htmlFor="email"><span>Email</span></label>
+                    <input className="contact-form-input" type="text" name="message" required autocomplete="off" value={this.state.formControls.message.value}
                      onChange={this.handleChange} />
+                     <label htmlFor="message"><span>Message</span></label>
                 </form>
                 <button onClick={this.handleSubmit} className="text-button">Submit</button>
             </div>
