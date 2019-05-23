@@ -43,19 +43,25 @@ class ContactForm extends Component {
         return(
             <div className="contact-form-container">
                 <form className="flex">
-                    <input className="contact-form-input" type="text" name="name" required autocomplete="off" 
-                     value={this.state.formControls.name.value} 
-                     onChange={this.handleChange} />
-                     <label htmlFor="name"><span>Name</span></label>
-                    <input className="contact-form-input" type="email" name="email" required autocomplete="off" 
-                     value={this.state.formControls.email.value} 
-                     onChange={this.handleChange}/>
-                     <label htmlFor="email"><span>Email</span></label>
-                    <input className="contact-form-input" type="text" name="message" required autocomplete="off" value={this.state.formControls.message.value}
-                     onChange={this.handleChange} />
-                     <label htmlFor="message"><span>Message</span></label>
+                    <div className="input-container">
+                        <input className="contact-form-input" placeholder=" " type="text" name="name"  
+                        value={this.state.formControls.name.value} 
+                        onChange={this.handleChange} />
+                        <label htmlFor="name">Name</label>
+                    </div>
+                    <div className="input-container">
+                        <input className="contact-form-input" placeholder=" " type="email" name="email"
+                        value={this.state.formControls.email.value} 
+                        onChange={this.handleChange}/>
+                        <label htmlFor="email">Email</label>
+                    </div>
+                    <div className="input-container">
+                        <input className="contact-form-input" placeholder=" " type="text" name="message"  value={this.state.formControls.message.value}
+                        onChange={this.handleChange} />
+                        <label htmlFor="message">Message</label>
+                    </div>
                 </form>
-                <button onClick={this.handleSubmit} className="text-button">Submit</button>
+                <button onClick={this.handleSubmit} className="button--text">Submit</button>
             </div>
         )
     }
