@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import firebase from '../firebase';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -22,6 +23,26 @@ class ContactForm extends Component {
     handleSubmit(event) {
         event.preventDefault();
         console.log(this.state.formControls)
+        const contactedRef = firebase.database().ref('contacted');
+        const newContacted = {
+            email: this.state.formControls.email.value,
+            name: this.state.formControls.name.value,
+            message: this.state.formControls.message.value
+        }
+        contactedRef.push(newContacted);
+        this.setState({
+            formControls: {
+                email: {
+                    value: ''
+                },
+                name: {
+                    value: ''
+                },
+                message: {
+                    value: ''
+                }
+            }
+        })
     }
 
     handleChange(event) {
