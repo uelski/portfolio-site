@@ -34,6 +34,21 @@
         }
     }
     &--text {
+        font-family: 'IBM Plex Sans', sans-serif;
+        padding: 15px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-color: white;
+        color: white;
+        background: transparent;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all .25s ease;
 
+        &:hover {
+            border-color: #00695c;
+            color: #00695c;
+        }
     }
 }

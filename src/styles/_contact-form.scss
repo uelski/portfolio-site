@@ -1,0 +1,48 @@
+.contact-form-container {
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40vw;
+        margin: 0 auto;
+
+        .input-container {
+            position:relative; 
+            margin-bottom:20px;
+            width: 100%;
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                // background: #212121;
+                color: white;
+                border: none;
+                border-bottom: 1px solid white;
+                font-size:14px;
+                padding:4px;
+                display:block;
+                height:30px;
+                background-color: transparent;
+    
+                &:focus, &:not(:placeholder-shown) {
+                    outline: none;
+                    border-bottom: 1px solid #00695c;
+                }
+                &:focus ~ label, &:not(:placeholder-shown) ~ label {
+                    top:-18px;
+                    font-size:16px;
+                    color: #00695c;
+                }
+            }
+            label {
+                color: white;
+                font-size:14px;
+                font-weight:normal;
+                position:absolute;
+                pointer-events:none;
+                left:5px;
+                top:5px;
+                transition:0.2s ease all; 
+            }
+        }
+        
+    }
+}

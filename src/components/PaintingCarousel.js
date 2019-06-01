@@ -52,10 +52,10 @@ class PaintingCarousel extends Component {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
               },
-              renderPrevButton: () => <button className="swiper-button-prev"><i class="material-icons">
+              renderPrevButton: () => <button className="swiper-button-prev"><i className="material-icons">
               arrow_back_ios
               </i></button>,
-              renderNextButton: () => <button className="swiper-button-next"><i class="material-icons">
+              renderNextButton: () => <button className="swiper-button-next"><i className="material-icons">
               arrow_forward_ios
               </i></button>
           }
