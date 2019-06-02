@@ -1,0 +1,14 @@
+.section--footer {
+    padding: 30px 0;
+    .icon-container {
+        justify-content: center;
+        align-items: center;
+        .footer-icon {
+            width: 30px;
+            margin: 0 6px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
